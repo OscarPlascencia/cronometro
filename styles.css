@@ -1,0 +1,76 @@
+/*Estilos Generales*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("imagenes/fondo.png") repeat center center/ cover;
+}
+
+/*Contenedores*/
+
+.contenedor-principal {
+  width: 80vw;
+  max-width: 600px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  border: 8px outset #777777;
+}
+
+.contenedor-botones {
+  padding: 20px;
+}
+
+/*Cronometro*/
+
+#cronometro {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 80px;
+  font-weight: bold;
+  user-select: none;
+  font-family: "Noto Sans Thai", sans-serif;
+  color: #dddddd;
+  background: linear-gradient(90deg, #222222, #666666, #222222);
+  border-radius: 10px;
+}
+
+/*Botones*/
+
+.boton {
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#boton-inicio-pausa.iniciar,
+#boton-inicio-pausa.iniciar i {
+  background: linear-gradient(45deg, #103d0a, #4fc022, #103d0a);
+  color: #dddddd;
+}
+
+#boton-inicio-pausa.pausar,
+#boton-inicio-pausa.pausar i {
+  background: linear-gradient(45deg, #885201, #f7b80c, #885201);
+  color: #dddddd;
+}
+
+#boton-reiniciar {
+  background: linear-gradient(-45deg, #610c06, #f54a16, #610c06);
+  color: #dddddd;
+}
